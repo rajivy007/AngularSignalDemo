@@ -1,0 +1,79 @@
+div {
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  div > div {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+
+.info-component {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.md-6 {
+    width: 40%; 
+}
+.rangeen{
+  width: 1280px;
+  height: 580px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red($color: #000000);
+  background: linear-gradient(
+    #2eaed9 0%,
+    #6bb8cf 10%,
+    #7fc3d6 16%,
+    #9eb4c2 24%,
+    red 40%,
+    blue 48%,
+    purple 76%,
+    olive 100%,
+   
+  );
+}
+
+div {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#cartInfo {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+}
+  

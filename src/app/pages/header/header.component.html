@@ -1,0 +1,9 @@
+@if(api.cartCount().length >0){
+    
+    <div class="md-6" id="cartInfo">
+        Total Items in Bucket are <b>{{ api.cartCount().length }}</b> that follows Change Detection
+    </div>
+    <h3>{{api.changeData()}}</h3>
+    <button (click)="changeHeader()">Change Header Name</button>
+
+}

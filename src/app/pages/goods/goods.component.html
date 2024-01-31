@@ -1,0 +1,26 @@
+<span><app-bucket></app-bucket> <app-header></app-header></span>
+<table class="my-table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Email</th>
+      <th>Name</th>
+      <th>Website</th>
+      <th>Phone</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of api.users()">
+      <td>{{ item.id }}</td>
+      <td>{{ item.email }}</td>
+      <td>{{ item.name }}</td>
+      <td>{{ item.website }}</td>
+      <td>{{ item.phone }}</td>
+      <button style="padding: 14px;" (click)="removeFromCart(item.id)">Remove</button>
+    </tr>
+  </tbody>
+</table>
+<button (click)="showfilteredRecord()">ID multiply by 5 using map</button>
+<button (click)="showfilteredRecord(5)">Only 5 records</button>
+<button (click)="addToCart()">Add to Cart</button>

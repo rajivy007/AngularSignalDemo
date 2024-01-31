@@ -1,0 +1,13 @@
+@if(api.cartCount().length >0){
+    <div class="info-component"> 
+        <div class="md-6" id="cartInfo">
+            Total Items in Bucket are <b>{{ api.cartCount().length }}</b> that doesn't follow Change Detection</div>
+        
+        <button class="md-6" (click)="getCD()">Get Change Detection</button>
+    </div>
+}
+
+<!-- 
+<div class="rangeen">
+    Colors
+</div> -->
